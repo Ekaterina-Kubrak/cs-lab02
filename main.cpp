@@ -18,13 +18,19 @@ int main()
     znach[2] = a * b;
     znach[3] = a / b;
     double max = znach[0];
-    for(size_t i = 0;i < 4; i++)
+    double min = znach[0];
+    for(size_t i = 0;i < 3; i++)
     {
         if(max < znach[i + 1])
         {
             max = znach[i + 1];
         }
+        if(min > znach[i + 1])
+        {
+            min = znach[i + 1];
+        }
     }
+    cout << "Min = " << min << '\n';
     cout << "Max = " << max << '\n';
     return 0;
 }

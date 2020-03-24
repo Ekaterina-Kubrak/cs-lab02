@@ -8,6 +8,7 @@ int main()
     cout << "Enter A and B: ";
     int a, b;
     vector<double>znach(4);
+    double a, b;
     cin >> a >> b;
     cout << "A + B = " << a + b << '\n'
          << "A - B = " << a - b << '\n'
